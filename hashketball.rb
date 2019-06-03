@@ -61,11 +61,7 @@ def game_hash
   },
   away: {
     team_name: "Charlotte Hornets",
-<<<<<<< HEAD
     colors: ["Turquoise", "Purple"],
-=======
-    colors: ["Torquoise", "Purple"],
->>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
     :players => {
       "Jeff Adrien" => {
         number: 4,
@@ -107,11 +103,7 @@ def game_hash
               blocks: 1,
               slam_dunks: 0
             },
-<<<<<<< HEAD
               "Brendan Haywood" => {
-=======
-              "Bredan Haywood" => {
->>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
                 number: 33,
                 shoe: 15,
                 points: 6,
@@ -127,13 +119,8 @@ def game_hash
 end
 
 def num_points_scored(name)
-<<<<<<< HEAD
   player = find_the_player(name)
   player.fetch(:points)
-=======
-  game_hash[:player]
-  puts num_points_scored("Brendan Haywood")
->>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
 end
 
 def shoe_size(name)
@@ -146,7 +133,6 @@ def team_colors(team_name)
   team.fetch(:colors)
 end
 
-<<<<<<< HEAD
 def team_names
   teams.map{|t| t.fetch(:team_name)}
 end
@@ -181,13 +167,4 @@ end
 
 def player_biggest_shoe_size
   players.max_by{|player, stats| stats.fetch(:shoe)}[1]
-=======
-def shoe_size(name)
-  player = find_the_shoe_size(name)
-  player.fetch(:shoe)
->>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
 end
-
-def num(players)
-  players.max_by{|player, stats|} stats.fetch(:shoe)} [1]
-end 
