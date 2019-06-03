@@ -187,3 +187,5 @@ def shoe_size(name)
   player.fetch(:shoe)
 >>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
 end
+
+
