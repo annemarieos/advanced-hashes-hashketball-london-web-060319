@@ -170,5 +170,5 @@ def player_biggest_shoe_size
 end
 
 def most_points_scored(players)
-  players.max_by{|player, stats| stats.fetch(:points)}[1]
+  players.max{|player, stats| stats.fetch(:points)}[1]
 end 
