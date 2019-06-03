@@ -174,5 +174,5 @@ def most_points_scored(players)
 end 
 
 def winning_team
-  team_name.max_by{|player, stats| stats.fetch (:points)}[1]
+  team_names.max_by{|player, stats| stats.fetch (:points)}[1]
 end 
